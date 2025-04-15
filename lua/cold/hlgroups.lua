@@ -102,7 +102,10 @@ function M.get(theme)
         ['WinBarNC'] = { link = 'Comment' },
 
         -- Syntax
-        ['Comment'] = { fg = theme.syntax.comment.fg },
+        ['Comment'] = {
+            fg = theme.syntax.comment.fg,
+            italic = theme.syntax.comment.italic,
+        },
 
         ['Constant'] = { fg = theme.syntax.identifier.fg },
         ['String'] = {
