@@ -209,6 +209,10 @@ function M.get(theme)
 
         -- Treesitter
         ['@attribute'] = { link = 'Identifier' },
+        ['@constant'] = {
+            fg = theme.syntax.keyword.fg,
+            italic = theme.syntax.constant.italic.builtin,
+        },
         ['@constant.builtin'] = {
             fg = theme.syntax.keyword.fg,
             italic = theme.syntax.constant.italic.builtin,

@@ -8,6 +8,7 @@ M.config = {
     undercurl = true,
     italic_string = false,
     italic_keyword = false,
+    italic_comments = true,
     italic_type = {
         normal = false,
         builtin = false,
@@ -192,7 +193,8 @@ vim.api.nvim_create_user_command('ColdColorschemeFile', function()
     local path = cold_state_dir .. '/cold.lua'
     M.generate_colorscheme_file(theme_dark, theme_light, path)
 
-    local msg = string.format('[cold.nvim] colorscheme file generated at %s', path)
+    local msg =
+        string.format('[cold.nvim] colorscheme file generated at %s', path)
     vim.notify(msg, vim.log.levels.INFO)
 end, {})
 
