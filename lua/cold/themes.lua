@@ -279,6 +279,7 @@ local themes = {
                 },
                 todo = {
                     bg = palette.pink_01,
+                    italic = config.italics.comments.todo,
                 },
                 added = {
                     fg = palette.light_02,
@@ -808,6 +809,7 @@ local themes = {
                 },
                 todo = {
                     bg = palette.pink_01,
+                    italic = config.italics.comments.todo,
                 },
                 added = {
                     fg = palette.light_02,

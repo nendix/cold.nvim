@@ -7,11 +7,7 @@ M.config = {
     nvim_tree_darker = false,
     undercurl = true,
     italics = {
-        comments = {
-            regular = true,
-            documentation = true,
-            todo = true,
-        },
+        comments = true,
         strings = false,
         keywords = true,
         types = {
