@@ -215,17 +215,17 @@ local themes = {
             syntax = {
                 comment = {
                     fg = palette.grey_02,
-                    italic = config.italic_comments,
+                    italic = config.italics.comments,
                 },
                 constant = {
                     fg = palette.light_01,
                     italic = {
-                        builtin = config.italic_constant.builtin,
+                        builtin = config.italics.constant.builtin,
                     },
                 },
                 string = {
                     fg = palette.green_05,
-                    italic = config.italic_string,
+                    italic = config.italics.string,
                 },
                 character = {
                     fg = palette.blue_04,
@@ -242,17 +242,17 @@ local themes = {
                 function_ = {
                     fg = palette.purple_03,
                     italic = {
-                        declaration = config.italic_function.declaration,
-                        call = config.italic_function.call,
+                        declaration = config.italics.functions.declaration,
+                        call = config.italics.functions.call,
                         method = {
-                            declaration = config.italic_function.method.declaration,
-                            call = config.italic_function.method.call,
+                            declaration = config.italics.functions.method.declaration,
+                            call = config.italics.functions.method.call,
                         },
                     },
                 },
                 keyword = {
                     fg = palette.blue_03,
-                    italic = config.italic_keyword,
+                    italic = config.italics.keyword,
                 },
                 operator = {
                     fg = palette.grey_08,
@@ -260,9 +260,9 @@ local themes = {
                 type = {
                     fg = palette.grey_07,
                     italic = {
-                        normal = config.italic_type.normal,
-                        builtin = config.italic_type.builtin,
-                        definition = config.italic_type.definition,
+                        normal = config.italics.type.normal,
+                        builtin = config.italics.type.builtin,
+                        definition = config.italics.type.definition,
                     },
                 },
                 special = {
@@ -745,17 +745,17 @@ local themes = {
             syntax = {
                 comment = {
                     fg = palette.grey_03,
-                    italic = config.italic_comments,
+                    italic = config.italics.comments,
                 },
                 constant = {
                     fg = palette.light_01,
                     italic = {
-                        builtin = config.italic_constant.builtin,
+                        builtin = config.italics.constants.builtin,
                     },
                 },
                 string = {
                     fg = palette.green_03,
-                    italic = config.italic_string,
+                    italic = config.italics.strings,
                 },
                 character = {
                     fg = palette.blue_04,
@@ -772,11 +772,11 @@ local themes = {
                 function_ = {
                     fg = palette.purple_01,
                     italic = {
-                        declaration = config.italic_function.declaration,
-                        call = config.italic_function.call,
+                        declaration = config.italics.functions.declaration,
+                        call = config.italics.functions.call,
                         method = {
-                            declaration = config.italic_function.method.declaration,
-                            call = config.italic_function.method.call,
+                            declaration = config.italics.functions.method.declaration,
+                            call = config.italics.functions.method.call,
                         },
                     },
                 },
@@ -789,9 +789,9 @@ local themes = {
                 type = {
                     fg = palette.grey_01,
                     italic = {
-                        normal = config.italic_type.normal,
-                        builtin = config.italic_type.builtin,
-                        definition = config.italic_type.definition,
+                        normal = config.italics.types.normal,
+                        builtin = config.italics.types.builtin,
+                        definition = config.italics.types.definition,
                     },
                 },
                 special = {

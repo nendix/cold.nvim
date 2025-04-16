@@ -6,23 +6,31 @@ M.config = {
     transparent_background = false,
     nvim_tree_darker = false,
     undercurl = true,
-    italic_string = false,
-    italic_keyword = false,
-    italic_comments = true,
-    italic_type = {
-        normal = false,
-        builtin = false,
-        definition = false,
-    },
-    italic_constant = {
-        builtin = false,
-    },
-    italic_function = {
-        declaration = false,
-        call = false,
-        method = {
+    italics = {
+        comments = {
+            regular = true,
+            documentation = true,
+            todo = true,
+        },
+        strings = false,
+        keywords = true,
+        types = {
+            normal = false,
+            builtin = false,
+            definition = false,
+        },
+        constants = {
+            builtin = false,
+            user = false,
+            macro = false,
+        },
+        functions = {
             declaration = false,
             call = false,
+            method = {
+                declaration = false,
+                call = false,
+            },
         },
     },
     custom_dark_background = nil,
