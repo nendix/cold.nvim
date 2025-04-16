@@ -221,6 +221,8 @@ local themes = {
                     fg = palette.light_01,
                     italic = {
                         builtin = config.italics.constants.builtin,
+                        user = config.italics.constants.user,
+                        macro = config.italics.constants.macro,
                     },
                 },
                 string = {
@@ -752,6 +754,8 @@ local themes = {
                     fg = palette.light_01,
                     italic = {
                         builtin = config.italics.constants.builtin,
+                        user = config.italics.constants.user,
+                        macro = config.italics.constants.macro,
                     },
                 },
                 string = {
