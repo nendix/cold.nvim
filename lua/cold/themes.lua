@@ -215,7 +215,7 @@ local themes = {
             syntax = {
                 comment = {
                     fg = palette.grey_02,
-                    italic = config.italics.comments,
+                    -- italic = config.italics.comments,
                 },
                 constant = {
                     fg = palette.light_01,
