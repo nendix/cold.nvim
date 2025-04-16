@@ -131,9 +131,8 @@ local function compile_if_not_exist()
     if vim.fn.filereadable(compiled) == 0 then
         local palette = require 'cold.palette'
 
-        local theme_dark = require('cold.themes.themes').dark(palette, M.config)
-        local theme_light =
-            require('cold.themes.themes').light(palette, M.config)
+        local theme_dark = require('cold.themes.init').dark(palette, M.config)
+        local theme_light = require('cold.themes.init').light(palette, M.config)
 
         M.compile(theme_dark, theme_light)
     end
@@ -157,8 +156,8 @@ end
 vim.api.nvim_create_user_command('ColdCompile', function()
     local palette = require 'cold.palette'
 
-    local theme_dark = require('cold.themes.themes').dark(palette, M.config)
-    local theme_light = require('cold.themes.themes').light(palette, M.config)
+    local theme_dark = require('cold.themes.init').dark(palette, M.config)
+    local theme_light = require('cold.themes.init').light(palette, M.config)
 
     M.compile(theme_dark, theme_light)
 
@@ -187,8 +186,8 @@ end
 vim.api.nvim_create_user_command('ColdColorschemeFile', function()
     local palette = require 'cold.palette'
 
-    local theme_dark = require('cold.themes.themes').dark(palette, M.config)
-    local theme_light = require('cold.themes.themes').light(palette, M.config)
+    local theme_dark = require('cold.themes.init').dark(palette, M.config)
+    local theme_light = require('cold.themes.init').light(palette, M.config)
 
     local cold_state_dir = vim.fn.stdpath 'state' .. '/cold'
     if vim.fn.isdirectory(cold_state_dir) == 0 then
