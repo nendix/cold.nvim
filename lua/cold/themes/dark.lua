@@ -234,7 +234,7 @@ return function(palette, config)
             identifier = {
                 fg = palette.light_01,
             },
-            function_ = {
+            functions = {
                 fg = palette.purple_03,
                 italic = {
                     declaration = config.italic.functions.declaration,
