@@ -220,7 +220,7 @@ local themes = {
                 constant = {
                     fg = palette.light_01,
                     italic = {
-                        builtin = config.italics.constant.builtin,
+                        builtin = config.italics.constants.builtin,
                     },
                 },
                 string = {
