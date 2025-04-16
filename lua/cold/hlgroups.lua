@@ -107,7 +107,7 @@ function M.get(theme)
             italic = theme.syntax.comment.italic,
         },
 
-        ['Constant'] = { fg = theme.syntax.identifier.fg },
+        ['Constant'] = { fg = theme.syntax.constant.fg },
         ['String'] = {
             fg = theme.syntax.string.fg,
             italic = theme.syntax.string.italic,
@@ -210,11 +210,11 @@ function M.get(theme)
         -- Treesitter
         ['@attribute'] = { link = 'Identifier' },
         ['@constant'] = {
-            fg = theme.syntax.keyword.fg,
+            fg = theme.syntax.constant.fg,
             italic = theme.syntax.constant.italic.builtin,
         },
         ['@constant.builtin'] = {
-            fg = theme.syntax.keyword.fg,
+            fg = theme.syntax.constant.fg,
             italic = theme.syntax.constant.italic.builtin,
         },
         ['@constructor'] = { link = 'Type' },

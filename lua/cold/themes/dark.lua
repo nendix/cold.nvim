@@ -208,19 +208,19 @@ return function(palette, config)
         syntax = {
             comment = {
                 fg = palette.grey_02,
-                italic = config.italics.comments,
+                italic = config.italic.comments,
             },
             constant = {
                 fg = palette.light_01,
                 italic = {
-                    builtin = config.italics.constants.builtin,
-                    user = config.italics.constants.user,
-                    macro = config.italics.constants.macro,
+                    builtin = config.italic.constants.builtin,
+                    user = config.italic.constants.user,
+                    macro = config.italic.constants.macro,
                 },
             },
             string = {
                 fg = palette.green_05,
-                italic = config.italics.string,
+                italic = config.italic.string,
             },
             character = {
                 fg = palette.blue_04,
@@ -237,17 +237,17 @@ return function(palette, config)
             function_ = {
                 fg = palette.purple_03,
                 italic = {
-                    declaration = config.italics.functions.declaration,
-                    call = config.italics.functions.call,
+                    declaration = config.italic.functions.declaration,
+                    call = config.italic.functions.call,
                     method = {
-                        declaration = config.italics.functions.method.declaration,
-                        call = config.italics.functions.method.call,
+                        declaration = config.italic.functions.method.declaration,
+                        call = config.italic.functions.method.call,
                     },
                 },
             },
             keyword = {
                 fg = palette.blue_03,
-                italic = config.italics.keyword,
+                italic = config.italic.keyword,
             },
             operator = {
                 fg = palette.grey_08,
@@ -255,9 +255,9 @@ return function(palette, config)
             type = {
                 fg = palette.grey_07,
                 italic = {
-                    normal = config.italics.types.normal,
-                    builtin = config.italics.types.builtin,
-                    definition = config.italics.types.definition,
+                    normal = config.italic.types.normal,
+                    builtin = config.italic.types.builtin,
+                    definition = config.italic.types.definition,
                 },
             },
             special = {
@@ -274,7 +274,7 @@ return function(palette, config)
             },
             todo = {
                 bg = palette.pink_01,
-                italic = config.italics.comments,
+                italic = config.italic.comments,
             },
             added = {
                 fg = palette.light_02,
