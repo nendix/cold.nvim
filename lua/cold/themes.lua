@@ -260,9 +260,9 @@ local themes = {
                 type = {
                     fg = palette.grey_07,
                     italic = {
-                        normal = config.italics.type.normal,
-                        builtin = config.italics.type.builtin,
-                        definition = config.italics.type.definition,
+                        normal = config.italics.types.normal,
+                        builtin = config.italics.types.builtin,
+                        definition = config.italics.types.definition,
                     },
                 },
                 special = {
